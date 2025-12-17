@@ -1,5 +1,5 @@
 {
-  "name": "whisper-overlay",
+  "name": "vibe-speaker",
   "private": true,
   "version": "0.0.0",
   "main": "dist-electron/main/index.js",
@@ -8,10 +8,10 @@
     "email": "josh@example.com"
   },
   "homepage": "https://github.com/josh/vibe-speaker",
-  "description": "Whisper Overlay App",
+  "description": "Vibe Speaker Application",
   "build": {
-    "appId": "com.josh.whisperoverlay",
-    "productName": "Whisper Overlay",
+    "appId": "com.josh.vibespeaker",
+    "productName": "Vibe Speaker",
     "directories": {
       "output": "releases/${version}/${os}"
     },
@@ -32,13 +32,16 @@
     ],
     "linux": {
       "target": ["AppImage", "deb"],
-      "category": "Utility"
+      "category": "Utility",
+      "icon": "build/icon.png"
     },
     "win": {
-      "target": "zip"
+      "target": "zip",
+      "icon": "build/icon.png"
     },
     "mac": {
-      "target": "zip"
+      "target": "zip",
+      "icon": "build/icon.png"
     }
   },
   "scripts": {
