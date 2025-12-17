@@ -1,7 +1,7 @@
 {
   "name": "vibe-speaker",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist-electron/main/index.js",
   "author": {
     "name": "Josh",
@@ -12,6 +12,7 @@
   "build": {
     "appId": "com.josh.vibespeaker",
     "productName": "Vibe Speaker",
+    "forceCodeSigning": false,
     "directories": {
       "output": "releases/${version}/${os}"
     },
@@ -40,8 +41,9 @@
       "icon": "build/icon.png"
     },
     "mac": {
-      "target": "dmg",
-      "icon": "build/icon.png"
+      "target": ["dmg", "zip"],
+      "icon": "build/icon.png",
+      "identity": null
     }
   },
   "scripts": {

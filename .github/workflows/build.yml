@@ -50,6 +50,7 @@ jobs:
       - name: Build Electron App
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSC_IDENTITY_AUTO_DISCOVERY: false
         run: npm run build
 
       # Upload Artifacts to the Release
