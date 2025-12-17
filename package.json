@@ -36,11 +36,11 @@
       "icon": "build/icon.png"
     },
     "win": {
-      "target": "zip",
+      "target": "nsis",
       "icon": "build/icon.png"
     },
     "mac": {
-      "target": "zip",
+      "target": "dmg",
       "icon": "build/icon.png"
     }
   },
